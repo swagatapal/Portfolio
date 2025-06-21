@@ -293,7 +293,7 @@ export const projects = [
     description:
       "This application empowers college administrators with comprehensive and visually intuitive reporting tools. It provides detailed insights into student dues categorized by year, course, semester, and individual student profiles. Additionally, it offers in-depth reports on fee collections and a complete overview of current academic year records, all presented through visually appealing and interactive graphical dashboards for effective data analysis and decision-making", 
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation1.jpg?raw=true",
     tags: [
       "Flutter",
       "Riverpod",
@@ -309,7 +309,7 @@ export const projects = [
     description:
       "This application is designed for comedians and comedy enthusiasts alike. Users can explore and enjoy a wide range of comedic content through video, with personalized recommendations and profile-based search capabilities to discover their favorite creators. Content creators can easily upload their performances and monetize their content directly through viewer engagement, enabling a seamless and rewarding experience for both artists and audiences", 
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation%202.jpg?raw=true",
     tags: [
       "Flutter",
       "Riverpod",
@@ -329,7 +329,7 @@ export const projects = [
     description:
     "This is an innovative native language learning application tailored for children. It offers an engaging, game-based learning environment where young users can learn their native languages such as Hindi, Bengali, and more. The app features interactive activities designed to make language acquisition fun and effective. Learners can track their progress through visually appealing graphical insights and seamlessly switch between multiple languages, fostering multilingual growth from an early age.",
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation3.jpg?raw=true",
     tags: [
       "Flutter",
       "Riverpod",
@@ -350,7 +350,7 @@ export const projects = [
     description:
     "This is a comprehensive school and college management application designed to streamline academic and administrative operations. Students can access class routines, important notices, upcoming events, medical assistance, cafeteria bookings, and store orders—all in one place. Parents can monitor their child's academic progress, attendance, and overall development in real-time. Teachers are equipped with tools to mark attendance, assign tasks, and manage student health records efficiently. The platform ensures seamless communication and coordination among students, parents, and educators, enhancing the overall educational experience.",
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation4.jpg?raw=true",
     tags: [
       "Flutter",
       "Riverpod",
