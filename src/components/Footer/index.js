@@ -103,7 +103,7 @@ function Footer() {
           <SocialMediaIcon href={Bio.insta} target="display"><InstagramIcon /></SocialMediaIcon>
         </SocialMediaIcons>
         <Copyright>
-          &copy; 2023 Swagata Pal. All rights reserved.
+          &copy; 2025 Swagata Pal. All rights reserved.
         </Copyright>
 
       </FooterWrapper>

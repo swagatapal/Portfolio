@@ -451,9 +451,9 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
+  { year: 2019, text: "Started my journey" },
+  { year: 2022, text: "Worked as a freelance web developer (MEAN Stack)" },
+  { year: 2023, text: "Learning Mobile App Development" },
+  { year: 2024, text: "Worked as a mobile app developer in industry" },
+  { year: 2025, text: "Worked as a senior software engineer(Flutter developer) and also building my own product with a talented team" },
 ];
