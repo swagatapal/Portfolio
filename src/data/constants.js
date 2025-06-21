@@ -286,50 +286,89 @@ export const education = [
 ];
 
 export const projects = [
-  // {
-  //   id: 8,
-  //   title: "Home Service App",
-  //   date: "March 2024 - April 2024",
-  //   description:
-  //     "This is an application where you can book your daily regular basis home service related task", 
-  //   image:
-  //     "https://raw.githubusercontent.com/swagatapal/testImage/main/WhatsApp%20Image%202024-04-26%20at%2011.17.26%20PM.jpeg",
-  //   tags: [
-  //     "React Native",
-  //     "Hygraph",
-  //     "Clerk Authentication",
-  //     "Graphql",
-  //     "Javascript",
-  //     "Firebase",
-  //   ],
-  //   category: "android app",
-  //   github: "https://github.com/swagatapal/Home-Service-App",
-  //   webapp: "https://drive.google.com/file/d/1Pp6vWKh2wlghU1T2tver-8kvIfkV69Hk/view?usp=sharing",
-  // },
-  // {
-  //   id: 8,
-  //   title: "MarketPlace App",
-  //   date: "April 2024 - Present",
-  //   description:
-  //     "This is an application Where you can upload your product details, customer can view the product and buy the product and contact with the seller", 
-  //   image:
-  //     "https://raw.githubusercontent.com/swagatapal/testImage/main/WhatsApp%20Image%202024-04-26%20at%2011.29.19%20PM.jpeg",
-  //   tags: [
-  //     "React Native",
-  //     "Javascript",
-  //     "Clerk Authentication",
-  //     "Firebase",
-  //   ],
-  //   category: "android app",
-  //   github: "https://github.com/swagatapal/MarketPlace_App",
-  //   webapp: "https://drive.google.com/file/d/1YtNG2FxW1U8CD5bTIgvCWz6kCvH88q0k/view?usp=sharing",
-  // },
   {
-    id: 8,
+    id: 0,
+    title: "College Admin App",
+    date: "March 2025 - May 2025",
+    description:
+      "This application empowers college administrators with comprehensive and visually intuitive reporting tools. It provides detailed insights into student dues categorized by year, course, semester, and individual student profiles. Additionally, it offers in-depth reports on fee collections and a complete overview of current academic year records, all presented through visually appealing and interactive graphical dashboards for effective data analysis and decision-making", 
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Riverpod",
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 1,
+    title: "FShorts",
+    date: "March 2025 - Present",
+    description:
+      "This application is designed for comedians and comedy enthusiasts alike. Users can explore and enjoy a wide range of comedic content through video, with personalized recommendations and profile-based search capabilities to discover their favorite creators. Content creators can easily upload their performances and monetize their content directly through viewer engagement, enabling a seamless and rewarding experience for both artists and audiences", 
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "Node Js",
+      "Mongodb",
+      "Video Streaming",
+      "Stripe payment gateway"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 2,
+    title: "Spelling Bee",
+    date: "March 2025 - Present",
+    description:
+    "This is an innovative native language learning application tailored for children. It offers an engaging, game-based learning environment where young users can learn their native languages such as Hindi, Bengali, and more. The app features interactive activities designed to make language acquisition fun and effective. Learners can track their progress through visually appealing graphical insights and seamlessly switch between multiple languages, fostering multilingual growth from an early age.",
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "Node Js",
+      "Mongodb",
+      "Api Integration",
+      "In App Subscription"
+      
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 3,
+    title: "Educare ERP",
+    date: "Jan 2025 - March 2025",
+    description:
+    "This is a comprehensive school and college management application designed to streamline academic and administrative operations. Students can access class routines, important notices, upcoming events, medical assistance, cafeteria bookings, and store orders—all in one place. Parents can monitor their child's academic progress, attendance, and overall development in real-time. Teachers are equipped with tools to mark attendance, assign tasks, and manage student health records efficiently. The platform ensures seamless communication and coordination among students, parents, and educators, enhancing the overall educational experience.",
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "Push Notification",
+      "Api Integration",
+      "Razorpay Payment Gateway"
+      
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "",
+  },
+  {
+    id: 4,
     title: "Inspired Image",
     date: "Jan 2024 - March 2024",
     description:
-      "This is an application for photography lover. i have followed clean architechture, source code is not available due to restriction of company", 
+      "This application is crafted for photography enthusiasts, offering a dedicated platform to showcase and enhance their skills. Built using clean architecture principles for scalability and maintainability, the app allows users to upload their photographs, participate in themed photography challenges, and access professional training resources. While the source code is not publicly available due to company policy, the app delivers a robust and engaging experience for aspiring and professional photographers alike.", 
     image:
       "https://raw.githubusercontent.com/swagatapal/testImage/main/WhatsApp%20Image%202024-04-26%20at%2010.31.48%20PM.jpeg",
     tags: [
@@ -340,7 +379,7 @@ export const projects = [
       "Firebase",
     ],
     category: "flutter app",
-    github: "https://drive.google.com/file/d/19ZL0RclQ4NreQR369e89fYhBpxnj0-q5/view?usp=drive_link",
+    github: "",
     webapp: "https://drive.google.com/file/d/19ZL0RclQ4NreQR369e89fYhBpxnj0-q5/view?usp=drive_link",
   },
   // {
