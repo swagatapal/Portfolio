@@ -4,7 +4,6 @@ export const Bio = {
     "Senior Software Engineer",
     "Flutter Developer",
     "Android App Developer",
-    "Full Stack App Developer",
     "Teacher",
   ],
   description:
@@ -20,7 +19,7 @@ export const Bio = {
 
 export const skills = [
   {
-    title: "Hybrid App Development(Flutter)",
+    title: "Hybrid App Developer(Flutter)",
     skills: [
       {
         name: "Flutter",
@@ -88,7 +87,7 @@ export const skills = [
     ],
   },
   {
-    title: "Android Development",
+    title: "Android Developer",
     skills: [
       {
         name: "Kotlin Jetpack Compose",

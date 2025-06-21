@@ -2,6 +2,8 @@ import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
+import Swal from 'sweetalert2';
+
 
 const Container = styled.div`
 width: 100%;
@@ -226,7 +228,37 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
+                        {/* <Button dull href={project?.github} target='new'>View Code</Button> */}
+                        <Button
+  dull
+  onClick={() => {
+    if (!project?.github || project.github.trim() === "") {
+        Swal.fire({
+            position: 'center',
+            icon: 'info',
+            title: 'Access Restricted',
+            text: 'Code is restricted due to company policy.',
+            footer: `
+              <div style="text-align: left;">
+                <strong>For discussion, contact:</strong><br />
+                <span>👤 Swagata Pal</span><br />
+                <span>📞 Phone: 9800072183</span><br />
+                <span>📧 Email: swagatapal2021@gmail.com</span>
+              </div>
+            `,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK',
+          });
+          
+      setOpenModal({ state: false, project: null })
+    } else {
+      window.open(project.github, "_blank");
+    }
+  }}
+>
+  View Code
+</Button>
+
                         <Button href={project?.webapp} target='new'>View Demo App</Button>
                     </ButtonGroup>
                 </Wrapper>
