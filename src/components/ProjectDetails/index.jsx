@@ -259,7 +259,37 @@ const index = ({ openModal, setOpenModal }) => {
   View Code
 </Button>
 
-                        <Button href={project?.webapp} target='new'>View Demo App</Button>
+                        {/* <Button href={project?.webapp} target='new'>View Demo App</Button> */}
+
+                        <Button
+  dull
+  onClick={() => {
+    if (!project?.webapp || project?.webapp.trim() === "") {
+        Swal.fire({
+            position: 'center',
+            icon: 'info',
+            title: 'development Mode',
+            text: 'Project is in development phase',
+            footer: `
+              <div style="text-align: left;">
+                <strong>For discussion, contact:</strong><br />
+                <span>👤 Swagata Pal</span><br />
+                <span>📞 Phone: 9800072183</span><br />
+                <span>📧 Email: swagatapal2021@gmail.com</span>
+              </div>
+            `,
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK',
+          });
+          
+      setOpenModal({ state: false, project: null })
+    } else {
+      window.open(project?.webapp, "_blank");
+    }
+  }}
+>
+View Demo App
+</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>
