@@ -388,7 +388,7 @@ export const projects = [
     description:
       "This astrology application offers a complete spiritual wellness experience by combining traditional astrological wisdom with modern digital features. Users can explore various types of astrology content and directly book live consultations with  astrologer through chat. The app also includes a numerology calculator that provides personalized insights based on name and birth date. A built-in digital compass helps users find accurate directions for rituals or home arrangements as per Vastu principles. Additionally, it offers an auspicious date finder to identify the best days for important events like marriages or business launches. Overall, the app serves as a one-stop destination for astrology, numerology, Vastu, and daily spiritual guidance.",
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation5.jpg?raw=true",
     tags: [
       "Flutter",
       "Dart",
