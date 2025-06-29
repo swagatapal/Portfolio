@@ -381,23 +381,24 @@ export const projects = [
     github: "",
     webapp: "https://drive.google.com/file/d/19ZL0RclQ4NreQR369e89fYhBpxnj0-q5/view?usp=drive_link",
   },
-  // {
-  //   id: 8,
-  //   title: "E-Commerce App",
-  //   date: "Dec 2023 - jan 2024",
-  //   description:
-  //     "This is a complete E commerce application. Here Users side and seller side both are available. To developed this project i ham using Flutter framework(dart) and for database purpose i use Firebase. For state management i have used GETx controller and for better understanding i have followed clean architechture In this Project I have built all the Feautures for E commerce App",
-  //   image:
-  //     "https://github.com/swagatapal/e_commerce_app/blob/main/assets/images/e-cart-home.jpeg?raw=true",
-  //   tags: [
-  //     "Flutter",
-  //     "Dart",
-  //     "Firebase",
-  //   ],
-  //   category: "android app",
-  //   github: "https://github.com/swagatapal/e_commerce_app",
-  //   webapp: "",
-  // },
+  {
+    id: 5,
+    title: "Astro Consultant",
+    date: "Feb 2025 - March 2025",
+    description:
+      "This astrology application offers a complete spiritual wellness experience by combining traditional astrological wisdom with modern digital features. Users can explore various types of astrology content and directly book live consultations with  astrologer through chat. The app also includes a numerology calculator that provides personalized insights based on name and birth date. A built-in digital compass helps users find accurate directions for rituals or home arrangements as per Vastu principles. Additionally, it offers an auspicious date finder to identify the best days for important events like marriages or business launches. Overall, the app serves as a one-stop destination for astrology, numerology, Vastu, and daily spiritual guidance.",
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Dart",
+      "Push Notification",
+      "Payment gateway"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=com.anjan.astro_app",
+  },
   // {
   //   id: 9,
   //   title: "Multi Disease Prediction",
