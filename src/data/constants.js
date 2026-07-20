@@ -9,8 +9,7 @@ export const Bio = {
   description:
     "I build intelligent mobile applications that combine modern software engineering with Generative AI. With 3+ years of experience in developing production-ready Android and iOS applications, I specialize in Flutter, scalable application architecture, backend integration, and AI-powered features using LLMs, RAG, AI agents, and modern AI frameworks. My goal is to create products that are fast, reliable, and genuinely useful through the practical application of artificial intelligence.",
   github: "https://github.com/swagatapal",
-  resume:
-    "https://drive.google.com/file/d/1_e4PlZYp7yPuj_WjX5jATBtg0HtN4k-J/view?usp=share_link",
+  resume:"https://drive.google.com/file/d/12G5xekMVAyJUbuxWF0rZ65K7v9ks7W_F/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/swagata-pal-b1b0421a2/",
   twitter: "",
   insta: "",
