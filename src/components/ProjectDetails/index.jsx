@@ -3,6 +3,7 @@ import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
 import Swal from 'sweetalert2';
+import ImageSlider from '../ImageSlider';
 
 
 const Container = styled.div`
@@ -65,14 +66,6 @@ const Desc = styled.div`
         font-size: 14px;
         margin: 6px 6px;
     }
-`;
-
-const Image = styled.img`
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
 `;
 
 const Label = styled.div`
@@ -199,7 +192,10 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    <ImageSlider
+                        images={project?.images?.length ? project.images : [project?.image]}
+                        alt={project?.title}
+                    />
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>

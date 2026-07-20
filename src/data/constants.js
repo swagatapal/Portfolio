@@ -372,7 +372,35 @@ export const education = [
 
 export const projects = [
 
-
+  {
+    id: 100,
+    title: "AI-Enabled SaaS Tuition Management Platform",
+    date: "2026 - Present",
+    description:
+      "A multi-tenant SaaS platform that lets any tuition or coaching centre run its entire operation from a single system, delivered across four surfaces: a Super Admin portal, an institute Admin portal, a Student web portal, and native Student apps for Android and iOS. The delivered platform covers group and batch management, class scheduling, exams, ranking and leaderboards, online courses, study-content sharing, live online classes, institute self-promotion and branding pages, fee collection, and concession handling. I am currently layering Generative AI across the product so that the day-to-day academic workload is automated end to end. On the assessment side this includes class-, subject- and chapter-wise AI question-set generation with blueprint and difficulty balancing, AI exam evaluation that grades both objective and descriptive answers against a rubric with written feedback, OCR and handwriting recognition so scanned answer sheets can be auto-evaluated, adaptive testing where difficulty adjusts to the student in real time, AI proctoring with anomaly detection during online exams, and plagiarism plus AI-written-answer detection. On the learning side it includes personalised study plans and next-topic suggestions per student, weak-topic detection with targeted remediation, performance prediction and early-warning flags for at-risk students, a RAG-powered doubt-solving assistant grounded on the institute's own notes and recordings, semantic search across all uploaded content, automatic transcription, summarisation and chaptering of recorded live classes, and auto-generated notes, flashcards and practice quizzes from any uploaded material. On the administrative side it includes fee-default prediction with smart concession recommendations, AI-generated promotional copy and creatives for institute marketing, auto-written progress narratives for parent report cards, sentiment analysis of student and parent feedback, timetable and batch optimisation, multilingual translation with voice-based queries, cohort and ranking analytics, and AI agents that automate routine admin follow-ups such as fee and attendance reminders.",
+    image:
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/stmp.jpeg?raw=true",
+    // Add more screenshots here — the details modal renders them as a slider.
+    images: [
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/stmp.jpeg?raw=true",
+    ],
+    tags: [
+      "React",
+      "Node Js",
+      "Express Js",
+      "MongoDB",
+      "Flutter",
+      "REST API",
+      "LLM",
+      "RAG",
+      "Vector DB",
+      "LangChain",
+      "Multi-tenant SaaS",
+    ],
+    category: "full stack",
+    github: "",
+    webapp: "",
+  },
 
   {
     id: 0,

@@ -25,6 +25,12 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
           <Divider />
+          {toggle === 'full stack' ?
+            <ToggleButton active value="full stack" onClick={() => setToggle('full stack')}>AI / FULL STACK</ToggleButton>
+            :
+            <ToggleButton value="full stack" onClick={() => setToggle('full stack')}>AI / FULL STACK</ToggleButton>
+          }
+          <Divider />
           {toggle === 'flutter app' ?
             <ToggleButton active value="flutter app" onClick={() => setToggle('flutter app')}>Flutter APP'S</ToggleButton>
             :
