@@ -159,7 +159,7 @@ export const skills = [
       },
       {
         name: "Express Js",
-        image:"https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
+        image: "https://w7.pngwing.com/pngs/925/447/png-transparent-express-js-node-js-javascript-mongodb-node-js-text-trademark-logo.png",
       },
       {
         name: "MongoDB",
@@ -168,7 +168,7 @@ export const skills = [
       },
       {
         name: "RestApi",
-        image:"https://www.opc-router.de/wp-content/uploads/2020/05/REST_socialmedia.jpg"
+        image: "https://www.opc-router.de/wp-content/uploads/2020/05/REST_socialmedia.jpg"
       }
     ],
   },
@@ -182,26 +182,26 @@ export const skills = [
       },
       {
         name: "Retrofit",
-               },
+      },
       {
         name: "Coroutines",
-                },
+      },
       {
         name: "ViewModel",
-                },
+      },
       {
         name: "LiveData",
-               },
+      },
       {
         name: "Room",
-               },
+      },
       {
         name: "WorkManager",
-               },
+      },
       {
         name: "Paging",
-                },
-      
+      },
+
     ],
   },
   {
@@ -284,7 +284,7 @@ export const experiences = [
       "Riverpod",
       "CI/CD Fastlane",
       "App Deployment",
-    
+
     ],
     //doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
   },
@@ -303,7 +303,7 @@ export const experiences = [
       "Dart",
       "Firebase",
       "Api Integration",
-      "deep linking", 
+      "deep linking",
       "Push notification",
     ],
     //doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
@@ -333,11 +333,11 @@ export const experiences = [
     desc: "Facilitated the learning of coding and computer science concepts for over 50 college students, providing mentorship and structured guidance to support their academic and professional growth.",
     skills: [
       "Online Teaching",
-      
+
     ],
     //doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
   },
-  
+
 ];
 
 export const education = [
@@ -378,7 +378,7 @@ export const projects = [
     id: 0,
     title: "Fitkhao",
     date: "jan 2026 - Present",
-    description:"FitKhao is a multi-role food delivery and meal subscription app designed to connect customers, restaurants, and delivery partners on a single platform. It enables users to browse healthy meals, place orders, subscribe to meal plans, track deliveries in real time, and make secure online payments.",
+    description: "FitKhao is a multi-role food delivery and meal subscription app designed to connect customers, restaurants, and delivery partners on a single platform. It enables users to browse healthy meals, place orders, subscribe to meal plans, track deliveries in real time, and make secure online payments.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/fitkhao.png?raw=true",
     tags: [
@@ -394,11 +394,11 @@ export const projects = [
   },
 
 
- {
+  {
     id: 1,
     title: "School Management Application",
     date: "Aug 2025 - May 2026",
-    description:"School Management Application is a comprehensive ERP solution designed to streamline academic and administrative operations through four user roles: Student, Staff, Admin, and Super Admin. It provides features such as attendance tracking, fee management, timetable, assignments, exams, LMS, notifications, student records, staff management, and role-based access control, enabling efficient communication and seamless school administration.",
+    description: "School Management Application is a comprehensive ERP solution designed to streamline academic and administrative operations through four user roles: Student, Staff, Admin, and Super Admin. It provides features such as attendance tracking, fee management, timetable, assignments, exams, LMS, notifications, student records, staff management, and role-based access control, enabling efficient communication and seamless school administration.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/sma.jpeg?raw=true",
     tags: [
@@ -417,7 +417,7 @@ export const projects = [
     id: 2,
     title: "HR Management Application",
     date: "Nov 2025 - April 2026",
-    description:"HRMS is a centralized workforce management solution that simplifies HR operations through features such as employee management, Geofencing and Face match based attendance, biometric attendance , leave management, payroll support, performance monitoring, and role-based access control. It helps organizations automate HR processes, improve operational efficiency, and manage employee information securely.",
+    description: "HRMS is a centralized workforce management solution that simplifies HR operations through features such as employee management, Geofencing and Face match based attendance, biometric attendance , leave management, payroll support, performance monitoring, and role-based access control. It helps organizations automate HR processes, improve operational efficiency, and manage employee information securely.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/hrms.jpeg?raw=true",
     tags: [
@@ -437,7 +437,7 @@ export const projects = [
     id: 2,
     title: "EVAR",
     date: "Dec 2025 - March 2026",
-    description:"",
+    description: "EVER is a frozen food delivery application that enables users to browse, order, and receive high-quality frozen food products with ease. The app offers a seamless shopping experience with product discovery, secure online payments, real-time order tracking, and efficient delivery management, ensuring freshness and convenience for customers.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/evar.jpeg?raw=true",
     tags: [
@@ -459,7 +459,7 @@ export const projects = [
     title: "College Admin App",
     date: "March 2025 - May 2025",
     description:
-      "This application empowers college administrators with comprehensive and visually intuitive reporting tools. It provides detailed insights into student dues categorized by year, course, semester, and individual student profiles. Additionally, it offers in-depth reports on fee collections and a complete overview of current academic year records, all presented through visually appealing and interactive graphical dashboards for effective data analysis and decision-making", 
+      "This application empowers college administrators with comprehensive and visually intuitive reporting tools. It provides detailed insights into student dues categorized by year, course, semester, and individual student profiles. Additionally, it offers in-depth reports on fee collections and a complete overview of current academic year records, all presented through visually appealing and interactive graphical dashboards for effective data analysis and decision-making",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation1.jpg?raw=true",
     tags: [
@@ -475,7 +475,7 @@ export const projects = [
     title: "FShorts",
     date: "March 2025 - Present",
     description:
-      "This application is designed for comedians and comedy enthusiasts alike. Users can explore and enjoy a wide range of comedic content through video, with personalized recommendations and profile-based search capabilities to discover their favorite creators. Content creators can easily upload their performances and monetize their content directly through viewer engagement, enabling a seamless and rewarding experience for both artists and audiences", 
+      "This application is designed for comedians and comedy enthusiasts alike. Users can explore and enjoy a wide range of comedic content through video, with personalized recommendations and profile-based search capabilities to discover their favorite creators. Content creators can easily upload their performances and monetize their content directly through viewer engagement, enabling a seamless and rewarding experience for both artists and audiences",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation%202.jpg?raw=true",
     tags: [
@@ -495,7 +495,7 @@ export const projects = [
     title: "Spelling Bee",
     date: "March 2025 - Present",
     description:
-    "This is an innovative native language learning application tailored for children. It offers an engaging, game-based learning environment where young users can learn their native languages such as Hindi, Bengali, and more. The app features interactive activities designed to make language acquisition fun and effective. Learners can track their progress through visually appealing graphical insights and seamlessly switch between multiple languages, fostering multilingual growth from an early age.",
+      "This is an innovative native language learning application tailored for children. It offers an engaging, game-based learning environment where young users can learn their native languages such as Hindi, Bengali, and more. The app features interactive activities designed to make language acquisition fun and effective. Learners can track their progress through visually appealing graphical insights and seamlessly switch between multiple languages, fostering multilingual growth from an early age.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation3.jpg?raw=true",
     tags: [
@@ -505,7 +505,7 @@ export const projects = [
       "Mongodb",
       "Api Integration",
       "In App Subscription"
-      
+
     ],
     category: "flutter app",
     github: "",
@@ -516,7 +516,7 @@ export const projects = [
     title: "Educare ERP",
     date: "Jan 2025 - March 2025",
     description:
-    "This is a comprehensive school and college management application designed to streamline academic and administrative operations. Students can access class routines, important notices, upcoming events, medical assistance, cafeteria bookings, and store orders—all in one place. Parents can monitor their child's academic progress, attendance, and overall development in real-time. Teachers are equipped with tools to mark attendance, assign tasks, and manage student health records efficiently. The platform ensures seamless communication and coordination among students, parents, and educators, enhancing the overall educational experience.",
+      "This is a comprehensive school and college management application designed to streamline academic and administrative operations. Students can access class routines, important notices, upcoming events, medical assistance, cafeteria bookings, and store orders—all in one place. Parents can monitor their child's academic progress, attendance, and overall development in real-time. Teachers are equipped with tools to mark attendance, assign tasks, and manage student health records efficiently. The platform ensures seamless communication and coordination among students, parents, and educators, enhancing the overall educational experience.",
     image:
       "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation4.jpg?raw=true",
     tags: [
@@ -525,7 +525,7 @@ export const projects = [
       "Push Notification",
       "Api Integration",
       "Razorpay Payment Gateway"
-      
+
     ],
     category: "flutter app",
     github: "",
@@ -536,7 +536,7 @@ export const projects = [
     title: "Inspired Image",
     date: "Jan 2024 - March 2024",
     description:
-      "This application is crafted for photography enthusiasts, offering a dedicated platform to showcase and enhance their skills. Built using clean architecture principles for scalability and maintainability, the app allows users to upload their photographs, participate in themed photography challenges, and access professional training resources. While the source code is not publicly available due to company policy, the app delivers a robust and engaging experience for aspiring and professional photographers alike.", 
+      "This application is crafted for photography enthusiasts, offering a dedicated platform to showcase and enhance their skills. Built using clean architecture principles for scalability and maintainability, the app allows users to upload their photographs, participate in themed photography challenges, and access professional training resources. While the source code is not publicly available due to company policy, the app delivers a robust and engaging experience for aspiring and professional photographers alike.",
     image:
       "https://raw.githubusercontent.com/swagatapal/testImage/main/WhatsApp%20Image%202024-04-26%20at%2010.31.48%20PM.jpeg",
     tags: [
@@ -600,7 +600,7 @@ export const projects = [
   //   //   },
   //   //],
   // },
-  
+
 ];
 
 export const TimeLineData = [
