@@ -107,35 +107,64 @@ export const Title = styled.div`
 `
 
 export const Desc = styled.div`
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.5;
   text-align: center;
-  max-width: 600px;
+  max-width: 620px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `
 
+/* Two columns: the featured Gen-AI card on the left, the rest stacked right */
 const SkillsContainer = styled.div`
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  margin-top: 26px;
+  gap: 18px;
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+`
+
+/* Right-hand column: the remaining categories stacked vertically */
+const StackColumn = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+  @media (max-width: 900px) {
+    gap: 14px;
+  }
 `
 
 /* Card reveals on scroll, has gradient border + glow on hover */
 const Skill = styled.div`
   width: 100%;
-  max-width: 500px;
   position: relative;
   background: ${({ theme }) => theme.card};
   border: 1px solid rgba(133, 76, 230, 0.35);
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  border-radius: 18px;
-  padding: 22px 36px;
+  box-shadow: rgba(23, 92, 230, 0.12) 0px 3px 16px;
+  border-radius: 14px;
+  padding: 16px 18px;
   overflow: hidden;
+
+  /* the featured Gen-AI card gets a stronger accent */
+  ${({ $featured, theme }) =>
+    $featured &&
+    css`
+      border-color: rgba(133, 76, 230, 0.6);
+      background: linear-gradient(
+          160deg,
+          rgba(133, 76, 230, 0.08),
+          rgba(0, 212, 255, 0.04)
+        ),
+        ${theme.card};
+      box-shadow: 0 4px 24px rgba(133, 76, 230, 0.2);
+    `}
   opacity: 0;
   transform: translateY(40px);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
@@ -153,7 +182,7 @@ const Skill = styled.div`
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: 18px;
+    border-radius: 14px;
     padding: 1px;
     background: linear-gradient(135deg, #854CE6, transparent 40%, transparent 60%, #00d4ff);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -165,29 +194,24 @@ const Skill = styled.div`
   }
 
   &:hover {
-    transform: translateY(-8px) scale(1.01);
+    transform: translateY(-5px);
     border-color: transparent;
-    box-shadow: 0 12px 40px rgba(133, 76, 230, 0.35);
+    box-shadow: 0 10px 28px rgba(133, 76, 230, 0.3);
   }
   &:hover::before {
     opacity: 1;
   }
 
-  @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 16px 28px;
-  }
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 14px 22px;
+    padding: 14px 16px;
   }
 `
 
 const SkillTitle = styled.h2`
-  font-size: 26px;
+  font-size: ${({ $featured }) => ($featured ? '19px' : '17px')};
   font-weight: 700;
   color: ${({ theme }) => theme.text_primary};
-  margin-bottom: 22px;
+  margin-bottom: 12px;
   text-align: center;
   position: relative;
   display: inline-block;
@@ -196,10 +220,10 @@ const SkillTitle = styled.h2`
   &::after {
     content: '';
     display: block;
-    margin: 10px auto 0;
-    width: 48px;
-    height: 3px;
-    border-radius: 3px;
+    margin: 7px auto 0;
+    width: 34px;
+    height: 2px;
+    border-radius: 2px;
     background: linear-gradient(90deg, #854CE6, #00d4ff);
   }
 `
@@ -208,21 +232,23 @@ const SkillList = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 6px;
+  gap: 7px;
+  margin-bottom: 2px;
 `
 
 const SkillItem = styled.div`
-  font-size: 16px;
+  font-size: 12.5px;
   font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
   color: ${({ theme }) => theme.text_primary + 'cc'};
   border: 1px solid rgba(133, 76, 230, 0.4);
-  border-radius: 12px;
-  padding: 10px 16px;
+  border-radius: 999px;
+  padding: 6px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   position: relative;
   overflow: hidden;
   cursor: default;
@@ -256,46 +282,43 @@ const SkillItem = styled.div`
   }
 
   &:hover {
-    transform: translateY(-3px) scale(1.05);
+    transform: translateY(-2px) scale(1.06);
     color: ${({ theme }) => theme.text_primary};
     border-color: #854CE6;
     background: rgba(133, 76, 230, 0.14);
-    box-shadow: 0 6px 18px rgba(133, 76, 230, 0.3);
+    box-shadow: 0 4px 12px rgba(133, 76, 230, 0.3);
   }
   &:hover::after {
     animation: ${shimmer} 0.9s ease;
   }
 
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
   @media (max-width: 500px) {
-    font-size: 13px;
-    padding: 7px 11px;
+    font-size: 12px;
+    padding: 5px 9px;
   }
 `
 
 const SkillImage = styled.img`
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
   object-fit: contain;
+  flex-shrink: 0;
 `
 
 /* Gradient letter badge shown when a skill has no logo (or one fails) */
 const IconFallback = styled.div`
-  width: 24px;
-  height: 24px;
-  border-radius: 6px;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
+  font-size: 9px;
   font-weight: 700;
   color: #fff;
   background: linear-gradient(135deg, #854CE6, #00d4ff);
-  box-shadow: 0 2px 8px rgba(133, 76, 230, 0.4);
+  box-shadow: 0 2px 6px rgba(133, 76, 230, 0.4);
   flex-shrink: 0;
 `
 
@@ -325,7 +348,7 @@ const SkillChip = ({ item, visible, delay }) => {
 /* ------------------------------------------------------------------ */
 /*  Card (reveals when scrolled into view)                            */
 /* ------------------------------------------------------------------ */
-const SkillCard = ({ skill, index }) => {
+const SkillCard = ({ skill, index, featured = false }) => {
   const ref = useRef(null)
   const [visible, setVisible] = useState(false)
 
@@ -346,15 +369,15 @@ const SkillCard = ({ skill, index }) => {
   }, [])
 
   return (
-    <Skill ref={ref} $visible={visible} $delay={index * 120}>
-      <SkillTitle>{skill.title}</SkillTitle>
+    <Skill ref={ref} $visible={visible} $delay={index * 90} $featured={featured}>
+      <SkillTitle $featured={featured}>{skill.title}</SkillTitle>
       <SkillList>
         {skill.skills.map((item, i) => (
           <SkillChip
             key={item.name}
             item={item}
             visible={visible}
-            delay={index * 120 + 200 + i * 45}
+            delay={index * 90 + 160 + i * 22}
           />
         ))}
       </SkillList>
@@ -363,6 +386,10 @@ const SkillCard = ({ skill, index }) => {
 }
 
 const Skills = () => {
+  /* The Gen-AI category is much larger than the rest, so it gets its own
+     column and the remaining categories stack alongside it. */
+  const [featured, ...rest] = skills
+
   return (
     <Container id="skills">
       <OrbOne />
@@ -375,9 +402,12 @@ const Skills = () => {
           products.
         </Desc>
         <SkillsContainer>
-          {skills.map((skill, index) => (
-            <SkillCard key={skill.title} skill={skill} index={index} />
-          ))}
+          <SkillCard skill={featured} index={0} featured />
+          <StackColumn>
+            {rest.map((skill, index) => (
+              <SkillCard key={skill.title} skill={skill} index={index + 1} />
+            ))}
+          </StackColumn>
         </SkillsContainer>
       </Wrapper>
     </Container>

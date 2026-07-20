@@ -204,71 +204,71 @@ export const skills = [
 
     ],
   },
-  {
-    title: "Tools & Technologies",
-    skills: [
-      {
-        name: "Git",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
-      },
-      {
-        name: "GitHub",
-        image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
-      },
-      // {
-      //   name: "Docker",
-      //   image:
-      //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
-      // },
-      {
-        name: "Netlify",
-        image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
-      },
-      {
-        name: "VS Code",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
-      },
-      {
-        name: "Postman",
-        image:
-          "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
-      },
-      {
-        name: "Android studio",
-        image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png",
-      },
-      {
-        name: "Xcode",
-        image:
-          "https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png",
-      },
-      // {
-      //   name: "Adobe XD",
-      //   image:
-      //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
-      // },
-      // {
-      //   name: "Figma",
-      //   image:
-      //     "https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format",
-      // },
-      // {
-      //   name : "C",
-      //   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png",
-      // },
-      // {
-      //   name: "Android Studio",
-      //   image:
-      //     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png",
-      // },
+  // {
+  //   title: "Tools & Technologies",
+  //   skills: [
+  //     {
+  //       name: "Git",
+  //       image:
+  //         "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
+  //     },
+  //     {
+  //       name: "GitHub",
+  //       image:
+  //         "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  //     },
+  //     // {
+  //     //   name: "Docker",
+  //     //   image:
+  //     //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg",
+  //     // },
+  //     {
+  //       name: "Netlify",
+  //       image:
+  //         "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+  //     },
+  //     {
+  //       name: "VS Code",
+  //       image:
+  //         "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+  //     },
+  //     {
+  //       name: "Postman",
+  //       image:
+  //         "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/postman-icon.png",
+  //     },
+  //     {
+  //       name: "Android studio",
+  //       image:
+  //         "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png",
+  //     },
+  //     {
+  //       name: "Xcode",
+  //       image:
+  //         "https://upload.wikimedia.org/wikipedia/en/5/56/Xcode_14_icon.png",
+  //     },
+  //     // {
+  //     //   name: "Adobe XD",
+  //     //   image:
+  //     //     "https://camo.githubusercontent.com/c205ecbe12500177d102169d97bc1c17c545155fdf5ec78c08d54ac53e5b38c1/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f61646f62652d78642e737667",
+  //     // },
+  //     // {
+  //     //   name: "Figma",
+  //     //   image:
+  //     //     "https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=804&h=804&q=75&fit=max&auto=format",
+  //     // },
+  //     // {
+  //     //   name : "C",
+  //     //   image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/926px-C_Programming_Language.svg.png",
+  //     // },
+  //     // {
+  //     //   name: "Android Studio",
+  //     //   image:
+  //     //     "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Android_Studio_icon_%282023%29.svg/2048px-Android_Studio_icon_%282023%29.svg.png",
+  //     // },
 
-    ],
-  },
+  //   ],
+  // },
 ];
 
 export const experiences = [
