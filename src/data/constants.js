@@ -380,7 +380,7 @@ export const projects = [
     date: "jan 2026 - Present",
     description:"FitKhao is a multi-role food delivery and meal subscription app designed to connect customers, restaurants, and delivery partners on a single platform. It enables users to browse healthy meals, place orders, subscribe to meal plans, track deliveries in real time, and make secure online payments.",
     image:
-      "",
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/fitkhao.png?raw=true",
     tags: [
       "Flutter",
       "Riverpod",
