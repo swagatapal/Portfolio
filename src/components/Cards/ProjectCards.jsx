@@ -21,6 +21,7 @@ const Card = styled.div`
     background-color: ${({ theme }) => theme.card};
     cursor: pointer;
     border-radius: 10px;
+    border: 1px solid rgba(133, 76, 230, 0.15);
     box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
     overflow: hidden;
     padding: 26px 20px;
@@ -29,8 +30,9 @@ const Card = styled.div`
     gap: 14px;
     transition: all 0.5s ease-in-out;
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
+        transform: translateY(-10px) scale(1.02);
+        border-color: rgba(133, 76, 230, 0.6);
+        box-shadow: 0 18px 50px 4px rgba(133, 76, 230, 0.35);
         filter: brightness(1.1);
     }
     &:hover ${Button} {

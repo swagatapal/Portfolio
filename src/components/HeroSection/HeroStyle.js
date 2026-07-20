@@ -1,5 +1,27 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 //import _default from "../../themes/default";
+
+const fadeInUp = keyframes`
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+`;
+
+const fadeInRight = keyframes`
+  from { opacity: 0; transform: translateX(40px) scale(0.96); }
+  to   { opacity: 1; transform: translateX(0) scale(1); }
+`;
+
+const float = keyframes`
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-16px); }
+  100% { transform: translateY(0); }
+`;
+
+const glowPulse = keyframes`
+  0%   { box-shadow: 0 0 24px 0 rgba(133, 76, 230, 0.5); }
+  50%  { box-shadow: 0 0 60px 12px rgba(133, 76, 230, 0.75); }
+  100% { box-shadow: 0 0 24px 0 rgba(133, 76, 230, 0.5); }
+`;
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
@@ -100,6 +122,11 @@ export const Img = styled.img`
   max-height: 400px;
   border-radius: 50%;
   border: 2px solid ${({ theme }) => theme.primary};
+  animation: ${float} 6s ease-in-out infinite, ${glowPulse} 4s ease-in-out infinite, ${fadeInRight} 0.9s ease both;
+  transition: transform 0.4s ease;
+  &:hover {
+    transform: scale(1.04);
+  }
 
   @media (max-width: 768px) {
     max-width: 400px;
@@ -117,6 +144,8 @@ export const Title = styled.div`
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  animation: ${fadeInUp} 0.7s ease both;
+  animation-delay: 0.1s;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -135,6 +164,8 @@ export const TextLoop = styled.div`
   gap: 12px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  animation: ${fadeInUp} 0.7s ease both;
+  animation-delay: 0.25s;
   @media (max-width: 960px) {
     text-align: center;
   }
@@ -155,6 +186,8 @@ export const SubTitle = styled.div`
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
+  animation: ${fadeInUp} 0.7s ease both;
+  animation-delay: 0.4s;
 
   @media (max-width: 960px) {
     text-align: center;
@@ -180,6 +213,8 @@ export const ResumeButton = styled.a`
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
+    animation: ${fadeInUp} 0.7s ease both;
+    animation-delay: 0.55s;
     transition: all 0.2s ease-in-out !important;
     background: hsla(271, 100%, 50%, 1);
     background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);

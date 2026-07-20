@@ -4,10 +4,10 @@ export const Bio = {
     "Senior Software Engineer",
     "Flutter Developer",
     "Android App Developer",
-    "Teacher",
+    "Generative Ai Engineer",
   ],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I build intelligent mobile applications that combine modern software engineering with Generative AI. With 3+ years of experience in developing production-ready Android and iOS applications, I specialize in Flutter, scalable application architecture, backend integration, and AI-powered features using LLMs, RAG, AI agents, and modern AI frameworks. My goal is to create products that are fast, reliable, and genuinely useful through the practical application of artificial intelligence.",
   github: "https://github.com/swagatapal",
   resume:
     "https://drive.google.com/file/d/1_e4PlZYp7yPuj_WjX5jATBtg0HtN4k-J/view?usp=share_link",
@@ -18,6 +18,92 @@ export const Bio = {
 };
 
 export const skills = [
+  {
+    title: "Generative AI & LLMs",
+    skills: [
+      {
+        name: "LLMs (GPT / Claude)",
+        image: "https://github.com/openai.png",
+      },
+      {
+        name: "OpenAI API",
+        image: "https://github.com/openai.png",
+      },
+      {
+        name: "Anthropic Claude",
+        image: "https://github.com/anthropics.png",
+      },
+      {
+        name: "Hugging Face",
+        image: "https://github.com/huggingface.png",
+      },
+      {
+        name: "LangChain",
+        image: "https://github.com/langchain-ai.png",
+      },
+      {
+        name: "LangGraph",
+        image: "https://github.com/langchain-ai.png",
+      },
+      {
+        name: "LlamaIndex",
+        image: "https://github.com/run-llama.png",
+      },
+      {
+        name: "RAG",
+      },
+      {
+        name: "Agentic AI",
+      },
+      {
+        name: "AI Agents",
+      },
+      {
+        name: "CrewAI",
+        image: "https://github.com/crewAIInc.png",
+      },
+      {
+        name: "Vector Databases",
+      },
+      {
+        name: "Pinecone",
+        image: "https://github.com/pinecone-io.png",
+      },
+      {
+        name: "ChromaDB",
+        image: "https://github.com/chroma-core.png",
+      },
+      {
+        name: "Qdrant",
+        image: "https://github.com/qdrant.png",
+      },
+      {
+        name: "Weaviate",
+        image: "https://github.com/weaviate.png",
+      },
+      {
+        name: "Embeddings",
+      },
+      {
+        name: "Prompt Engineering",
+      },
+      {
+        name: "Fine-tuning",
+      },
+      {
+        name: "Ollama",
+        image: "https://github.com/ollama.png",
+      },
+      {
+        name: "Llama (Meta)",
+        image: "https://github.com/meta-llama.png",
+      },
+      {
+        name: "Mistral AI",
+        image: "https://github.com/mistralai.png",
+      },
+    ],
+  },
   {
     title: "Hybrid App Developer(Flutter)",
     skills: [
@@ -285,6 +371,89 @@ export const education = [
 ];
 
 export const projects = [
+
+
+
+  {
+    id: 0,
+    title: "Fitkhao",
+    date: "jan 2026 - Present",
+    description:"FitKhao is a multi-role food delivery and meal subscription app designed to connect customers, restaurants, and delivery partners on a single platform. It enables users to browse healthy meals, place orders, subscribe to meal plans, track deliveries in real time, and make secure online payments.",
+    image:
+      "",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "FCM",
+      "Razorpay Payment Gateway",
+      "Websocket"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=com.fitkhao.fitkhao_user&hl=en_IN",
+  },
+
+
+ {
+    id: 1,
+    title: "School Management Application",
+    date: "Aug 2025 - May 2026",
+    description:"School Management Application is a comprehensive ERP solution designed to streamline academic and administrative operations through four user roles: Student, Staff, Admin, and Super Admin. It provides features such as attendance tracking, fee management, timetable, assignments, exams, LMS, notifications, student records, staff management, and role-based access control, enabling efficient communication and seamless school administration.",
+    image:
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/sma.jpeg?raw=true",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "FCM",
+      "ICICI Payment Gateway",
+      "Biometric Authentication"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=com.kiwi.school_management_app&hl=en_IN",
+  },
+
+  {
+    id: 2,
+    title: "HR Management Application",
+    date: "Nov 2025 - April 2026",
+    description:"HRMS is a centralized workforce management solution that simplifies HR operations through features such as employee management, Geofencing and Face match based attendance, biometric attendance , leave management, payroll support, performance monitoring, and role-based access control. It helps organizations automate HR processes, improve operational efficiency, and manage employee information securely.",
+    image:
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/hrms.jpeg?raw=true",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "FCM",
+      "Face Matching",
+      "GeoFencing",
+      "Biometric Authentication"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=com.hrms.nf&hl=en_IN",
+  },
+
+  {
+    id: 2,
+    title: "EVAR",
+    date: "Dec 2025 - March 2026",
+    description:"",
+    image:
+      "https://github.com/swagatapal/Portfolio/blob/main/src/images/evar.jpeg?raw=true",
+    tags: [
+      "Flutter",
+      "Riverpod",
+      "FCM",
+      "RazorPay"
+    ],
+    category: "flutter app",
+    github: "",
+    webapp: "https://play.google.com/store/apps/details?id=com.onefood.user_app&hl=en_IN",
+  },
+
+
+
+
   {
     id: 0,
     title: "College Admin App",
@@ -381,24 +550,7 @@ export const projects = [
     github: "",
     webapp: "https://drive.google.com/file/d/19ZL0RclQ4NreQR369e89fYhBpxnj0-q5/view?usp=drive_link",
   },
-  {
-    id: 5,
-    title: "Astro Consultant",
-    date: "Feb 2025 - March 2025",
-    description:
-      "This astrology application offers a complete spiritual wellness experience by combining traditional astrological wisdom with modern digital features. Users can explore various types of astrology content and directly book live consultations with  astrologer through chat. The app also includes a numerology calculator that provides personalized insights based on name and birth date. A built-in digital compass helps users find accurate directions for rituals or home arrangements as per Vastu principles. Additionally, it offers an auspicious date finder to identify the best days for important events like marriages or business launches. Overall, the app serves as a one-stop destination for astrology, numerology, Vastu, and daily spiritual guidance.",
-    image:
-      "https://github.com/swagatapal/Portfolio/blob/main/src/images/Presentation5.jpg?raw=true",
-    tags: [
-      "Flutter",
-      "Dart",
-      "Push Notification",
-      "Payment gateway"
-    ],
-    category: "flutter app",
-    github: "",
-    webapp: "https://play.google.com/store/apps/details?id=com.anjan.astro_app",
-  },
+
   // {
   //   id: 9,
   //   title: "Multi Disease Prediction",

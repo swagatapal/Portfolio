@@ -9,6 +9,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import { education, experiences } from '../../data/constants';
 import EducationCard from '../Cards/EducationCard';
+import Reveal from '../Reveal';
+import { gradientTitle } from '../../utils/animations';
 
 const Container = styled.div`
     display: flex;
@@ -39,11 +41,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
+font-size: 44px;
 text-align: center;
-font-weight: 600;
+font-weight: 700;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  ${gradientTitle}
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -81,16 +83,20 @@ const index = () => {
     return (
         <Container id="education">
             <Wrapper>
-                <Title>Education</Title>
-                <Desc>
-                    My education has been a journey of self-discovery and growth. My educational details are as follows.
-                </Desc>
+                <Reveal>
+                    <Title>Education</Title>
+                    <Desc>
+                        My education has been a journey of self-discovery and growth. My educational details are as follows.
+                    </Desc>
+                </Reveal>
                 <TimelineSection>
                     <Timeline>
                         {education.map((education,index) => (
                             <TimelineItem >
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <EducationCard education={education}/>
+                                    <Reveal delay={index * 120}>
+                                        <EducationCard education={education}/>
+                                    </Reveal>
                                 </TimelineContent>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />

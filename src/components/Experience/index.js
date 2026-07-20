@@ -9,6 +9,8 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
+import Reveal from '../Reveal';
+import { gradientTitle } from '../../utils/animations';
 
 const Container = styled.div`
     display: flex;
@@ -39,11 +41,11 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
-font-size: 42px;
+font-size: 44px;
 text-align: center;
-font-weight: 600;
+font-weight: 700;
 margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  ${gradientTitle}
   @media (max-width: 768px) {
       margin-top: 12px;
       font-size: 32px;
@@ -78,10 +80,12 @@ const index = () => {
     return (
         <Container id="experience">
             <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                    My work experience as a software engineer and working on different companies and projects.
-                </Desc>
+                <Reveal>
+                    <Title>Experience</Title>
+                    <Desc>
+                        My work experience as a software engineer and working on different companies and projects.
+                    </Desc>
+                </Reveal>
                 <TimelineSection>
                     <Timeline>
                         {experiences.map((experience,index) => (
@@ -91,7 +95,9 @@ const index = () => {
                                     {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience}/>
+                                    <Reveal delay={index * 120}>
+                                        <ExperienceCard experience={experience}/>
+                                    </Reveal>
                                 </TimelineContent>
                             </TimelineItem>
                         ))}
